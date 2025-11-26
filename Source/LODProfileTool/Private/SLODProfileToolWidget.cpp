@@ -1,5 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
-
+#include "ContentBrowserModule.h"
+#include "IContentBrowserSingleton.h"
 #include "SLODProfileToolWidget.h"
 
 #include "ContentBrowserModule.h"
