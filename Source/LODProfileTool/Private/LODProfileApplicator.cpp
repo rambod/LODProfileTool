@@ -125,7 +125,8 @@ bool FLODProfileApplicator::ApplyProfileToMesh(UStaticMesh* Mesh, const FLODProf
 	const int32 ExistingLODCount = Mesh->GetNumSourceModels();
 	const int32 TargetLODCount = Profile.bOverrideExisting ? Profile.NumLODs : FMath::Max(ExistingLODCount, Profile.NumLODs);
 	Mesh->SetNumSourceModels(TargetLODCount);
-	Mesh->bAutoComputeLODScreenSize = false;
+	Mesh->SetAutoComputeLODScreenSize(false);
+
 
 	for (int32 LODIndex = 0; LODIndex < TargetLODCount; ++LODIndex)
 	{
